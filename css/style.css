@@ -1,0 +1,181 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-image: url("../img/ROMA.jpg"); /* Mantiene tu imagen */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'serif', Arial, sans-serif;
+	color: white;
+}
+
+/* Título */
+h1 {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6); 
+	padding: 20px;
+	border-radius: 15px;
+	margin: 40px auto;
+	width: fit-content;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* Menú */
+#encabezado .menu {
+	width: 900px;
+	float: right;
+	margin-top: 10px;
+	text-align: center;
+	border: 0px solid;
+	font-size: 20px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	line-height: 2.5rem;
+	position: relative;
+}
+
+.menu ul {
+	position: absolute;
+}
+
+nav a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	transition: .4s;
+	padding: 10px 20px;
+}
+
+nav a:hover {
+	background: rgba(0, 0, 0, .5);
+}
+
+.menu {
+	background: #4e2f27;
+	display: table;
+	height: auto;
+}
+
+.menu > li {
+	float: left;
+	position: relative;
+	margin-right: 5px; 
+}
+
+nav li ul {
+	position: absolute;
+	top: 10;
+	left: 1%;
+	background: #682d1e;
+	width: 155px;
+	display: none;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+nav li:hover > ul {
+	display: flex;
+}
+
+nav li li {
+	background: #682d1e;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu ul ul {
+	top: 0;
+	left: 200%;
+}
+
+/* Estilos del formulario */
+form {
+	background-color: rgba(221, 216, 215, 0.37);
+	max-width: 1000px;
+	margin: 5px auto;
+	padding: 20px 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+	color: black;
+}
+
+label {
+	display: block;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+textarea {
+	height: 100px;
+	resize: vertical;
+}
+
+.marketing {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.marketing label {
+	font-weight: normal;
+}
+
+input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+.rgd {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+	form {
+		padding: 10px;
+	}
+
+	input, select, textarea, button {
+		font-size: 14px;
+	}
+}
+
